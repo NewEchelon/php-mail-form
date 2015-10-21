@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        body{
+            font-family:"Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+            font-size:12px;
+        }
+        p, h1, form, button{border:0; margin:0; padding:0;}
+
+        .contact{color: rgb(140, 140, 140);
+            background-color: #F9F9F9;
+        width:650px;
+            border-radius: 10px;
+            box-shadow: rgba(2, 2, 2, 0.227451) 1px 1px 3px 0px;}
+
+        .hereform {width:300px;
+        height:25px;
+       }
+        input[type="submit"].cform,
+        input[type="reset"].cform{
+            padding: 10px 20px;
+            display: inline-block;
+            cursor: pointer;
+            border: 1px solid #529069;
+
+            background: #529069;
+            color: #fff;
+            margin-bottom: 20px;
+            font-weight: 300;
+            outline: none;
+            -webkit-transition: all 180ms ease-in;
+            -moz-transition: all 180ms ease-in;
+            -ms-transition: all 180ms ease-in;
+            -o-transition: all 180ms ease-in;
+            transition: all 180ms ease-in;
+    </style>
+</head>
+<body>
+
+
+<form class="contact" action="mail.php" method="POST" style="padding:2.5em;">
+  <div>
+      <div style="float:left; margin-right:1em;"> <p>Name</p> <input class="hereform" type="text" name="name"></div>
+      <div style="float:right; margin-right:1em;"> <p>Business Name</p> <input class="hereform" type="text" name="bname"></div>
+  </div>
+
+    <div style="height:70px;"></div>
+        <div style="float:left; margin-right:1em;"> <p>Email</p> <input placeholder="yourname@email.com" class="hereform" type="text" name="email"></div>
+        <div style="float:right; margin-right:1em; "> <p>Phone</p> <input  placeholder="(123) 456 7890" class="hereform" type="text" name="phone"></div>
+
+    <div style="height:70px;"></div>
+
+    <p >How did you hear about EPS?</p>
+    <select name="referral" size="1">
+        <option value="Newspaper/Magazine Ad">Newspaper/Magazine Ad</option>
+        <option value="Web">Web</option>
+        <option value="Radio Ad">Radio Ad</option>
+        <option value="Word of Mouth">Word of Mouth</option>
+    </select>
+    <br />
+    <div style="height:20px;"></div>
+
+    <p>Type</p>
+    <select name="type" size="1">
+        <option value="update">Website Update</option>
+        <option value="change">Information Change</option>
+        <option value="addition">Information Addition</option>
+        <option value="new">New Products</option>
+    </select>
+    <br />
+    <div style="height:20px;"></div>
+   <div style="width:90%; margin-left:5em;"> <p>Message</p><textarea style="width:80%; margin:0 auto;" name="message" rows="6" cols="25"></textarea><br />
+   </div>
+    <div style="height:20px;"></div>
+    <div style="width:150px; margin:0 auto;">
+        <p><label for="message_human">Human Verification:<br><span style="text-align:center;">What is: *</span> <br><input type="text" style="width: 60px;" name="message_human"> + 3 = 5</label></p>
+    </div>
+    <div style="height:20px;"></div>
+
+   <div style="width:200px; margin:1em auto 0 auto;">
+       <input style="margin-right:1em;" type="submit" class="cform" value="Send">
+       <input class="cform" type="reset" value="Clear"></div>
+</form>
+
+
+</body>
+<footer>
+</footer>
+</html>
